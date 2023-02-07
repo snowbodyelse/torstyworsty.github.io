@@ -12,7 +12,6 @@ app.config['UPLOAD_FOLDER'] = picFolder
 def index():
     pic1 = os.path.join(app.config['UPLOAD_FOLDER'], 'cat heart.jpg')
     return render_template("index.html", user_image=pic1)   
-
-
+    
 app.run()
 
